@@ -34,7 +34,7 @@ let exerciseAPI = async (muscleName) => {
       throw new Error("Error occurred while fetching data.");
     }
     result = await response.json();
-    console.log(result);
+   
 	
 	 displayExercise(exerciseNum);
 
@@ -66,7 +66,7 @@ let displayExercise=(index)=>{
 rBtn.addEventListener('click',()=>{
   exerciseNum++;
   displayExercise(exerciseNum);
-  console.log('button clicked r');
+ 
 })
 
 lBtn.addEventListener('click',()=>{
