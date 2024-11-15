@@ -2,12 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #E1E2FA;
   }
+  @font-face {
+    font-family: 'carving';
+    src: url('./font-assests/made_carving_soft/MADECarvingSoftPERSONALUSE-Thin.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'carvingB';
+    src: url('./font-assests/made_carving_soft/MADECarvingSoftPERSONALUSE-Bold.otf') format('opentype');
+  }
+  
   html{
     height: 100%;
   }
   body {
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    background: linear-gradient(135deg, #181D35, #4E497F, #8A7DBE);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -17,12 +27,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    
     height: auto;
-    width: 850px;
-    background:  linear-gradient(135deg, #2a2a3d, #232836);
+    width: auto;
+    background: linear-gradient(135deg, #20243A, #32394F);
     margin: 0 auto;
    color:#E0E0E0 ; 
    border-radius: 15px;
+   font-family: 'carving', 'sans-serif';
    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5)
   }
   
@@ -74,11 +86,15 @@
   }
   .nameExercise{
     font-size: 50px;
+    padding-top: 5px;
     font-weight: bold;
+    text-align: center;
+    font-family: 'carvingB','sans-serif' ;
   }
   .description{
     font-size: 20px;
     margin: 40px;
+    width: 900px;
   }
   .disabled {
     background-color: #777; 

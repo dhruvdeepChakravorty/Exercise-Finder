@@ -2,9 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #E1E2FA;
+
 }
+@font-face {
+  font-family: 'Designer';
+  src: url('./font-assests/impact/Impact.ttf') format('opentype');
+}
+@font-face {
+  font-family: 'carving';
+  src: url('./font-assests/made_carving_soft/MADECarvingSoftPERSONALUSE-Medium.otf') format('opentype');
+}
+
+
 body {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  background: linear-gradient(135deg, #181D35, #4E497F, #8A7DBE);
+  
   display: flex;
   flex-direction: column;
 }
@@ -12,12 +25,19 @@ body {
   display: flex;
   justify-content: center;
   
-  color: #eaeaea;
+  color: #eaeaea64;
   
 }
 .fhead {
   font-size: 45px;
+  font-weight: bolder;
   margin-top: 20px;
+ font-family: 'Designer', 'sans-serif';
+ color: #ffffff;
+ cursor: pointer;
+  letter-spacing: 3px;
+
+
 }
 
 .flipped {
@@ -39,14 +59,15 @@ body {
   .card {
      flex: 0 1 45%;
     display: flex;
-   
+    font-family: 'carving', 'sans-serif';
     align-items: center;
-    
+    text-align: center;
     border-radius: 8px;
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
-    background: linear-gradient(135deg, #2a2a3d, #232836);
+    background: linear-gradient(135deg, #20243A, #32394F);
+    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform: translateZ(0);
     position: relative; 
